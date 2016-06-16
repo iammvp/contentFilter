@@ -1,0 +1,12 @@
+body {
+    width: 960px;
+    margin: 0 auto;
+}
+.search {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.submit{
+	margin-bottom: 15px;
+	outline: none;
+}
