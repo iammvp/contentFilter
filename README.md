@@ -37,3 +37,6 @@ contentFilter is a jQuery plugin that helps you filter your collections.
 	});
 ```
 ### Demo
+[Filter for list](http://iammvp.github.io/contentFilter/examples/list.html)
+[Filter for table](http://iammvp.github.io/contentFilter/examples/table.html)
+[Filter for click event](http://iammvp.github.io/contentFilter/examples/click.html)
