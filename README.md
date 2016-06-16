@@ -9,10 +9,14 @@ contentFilter is a jQuery plugin that helps you filter your collections.
 ### Options
 ```
 'input' : Jquery Object  		The input box where you type key-words
+
 'event' : String         		'keyup' or 'click', default value is keyup
+
 'clickButton': Jquery Object	The selector of submit button, only provider this opiton if event is 'click'
+
 'target': String				Tag which you want to hide if it not match filter. Usually it is your selecotr's 
 								parent tag. Default value is the selecotr itself
+
 ```
 ### Usage
 ```html
@@ -32,3 +36,4 @@ contentFilter is a jQuery plugin that helps you filter your collections.
 		'target': '.name'
 	});
 ```
+### Demo
