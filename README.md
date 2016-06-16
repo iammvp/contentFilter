@@ -1,1 +1,2 @@
-Alt-H1 contentFilter
+# contentFilter
+contentFilter is a jQuery plugin that helps you filter your collections.
