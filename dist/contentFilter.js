@@ -1,4 +1,3 @@
-
 (function($) {
     $.fn.contentFilter = function(options) {
         var $that = this;
