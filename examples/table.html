@@ -3,52 +3,106 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>contentFilter table</title>
     <link href="../lib/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-<table class="table table-striped">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Username</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-      </tbody>
+    <input type="text" class="search form-control" placeholder='filter for Last Name' />
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Timothy</td>
+                <td>Sims</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Kimberly</td>
+                <td>Kennedy</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>Maria</td>
+                <td>Torres</td>
+                <td>@twitter</td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td>Ryan</td>
+                <td>Campbell</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">8</th>
+                <td>Marilyn</td>
+                <td>Peterson</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">9</th>
+                <td>Betty</td>
+                <td>Perry</td>
+                <td>@twitter</td>
+            </tr>
+            <tr>
+                <th scope="row">10</th>
+                <td>Steven</td>
+                <td>Reed</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">11</th>
+                <td>Laura</td>
+                <td>Simmons</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">12</th>
+                <td>Jean</td>
+                <td>Wallace</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
     </table>
-    <input type="text" class="k" />
-    <input type="submit" value="提交" class="s">
 </body>
 <script src="../lib/jquery.min.js"></script>
 <script src="../dist/contentFilter.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-	$('table tbody tr td:nth-child(3)').contentFilter({
-		'input': $('.k'),
-		'target': 'tr'
-	});
+    $('table tbody tr td:nth-child(3)').contentFilter({
+        'input': $('.search'),
+        'target': 'tr'
+    });
 });
 </script>
 
